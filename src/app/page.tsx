@@ -1560,8 +1560,8 @@ export default function Home() {
                         <Icon
                           size={18}
                           className={`h-[18px] w-[18px] shrink-0 ${!isDesktopSidebarExpanded && label === "Nov klepet"
-                              ? "min-[751px]:translate-x-[1px]"
-                              : ""
+                            ? "min-[751px]:translate-x-[1px]"
+                            : ""
                             }`}
                         />
                       )}
@@ -1602,10 +1602,10 @@ export default function Home() {
                     <div
                       key={thread.id}
                       className={`group relative rounded-md ${isDesktopSidebarExpanded
-                          ? activeChatId === thread.id
-                            ? "bg-[#afafaf]/15"
-                            : "hover:bg-[#afafaf]/15"
-                          : ""
+                        ? activeChatId === thread.id
+                          ? "bg-[#afafaf]/15"
+                          : "hover:bg-[#afafaf]/15"
+                        : ""
                         }`}
                     >
                       <button
@@ -1627,8 +1627,8 @@ export default function Home() {
                           setInputValue("");
                         }}
                         className={`flex w-full cursor-pointer items-center rounded-md py-2 text-left text-[15px] text-white transition-[padding,background-color] duration-200 ${isDesktopSidebarExpanded
-                            ? "px-3 pr-10"
-                            : "min-[751px]:pl-[7px] min-[751px]:pr-0"
+                          ? "px-3 pr-10"
+                          : "min-[751px]:pl-[7px] min-[751px]:pr-0"
                           }`}
                       >
                         <span
@@ -1716,8 +1716,8 @@ export default function Home() {
                           }}
                           disabled={!activeChatId}
                           className={`flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-left text-sm transition-colors duration-200 ${activeChatId
-                              ? "text-white hover:bg-[#afafaf]/15"
-                              : "cursor-not-allowed text-[#7f7f7f]"
+                            ? "text-white hover:bg-[#afafaf]/15"
+                            : "cursor-not-allowed text-[#7f7f7f]"
                             }`}
                         >
                           <Trash2 size={14} />
@@ -1748,7 +1748,7 @@ export default function Home() {
                               kako razmišljam in delam.
                             </p>
                             <p>
-                              Programirati sem začel pri dvanajstih letih. Sprva iz radovednosti,
+                              Programirati sem začel pri enajstih letih. Sprva iz radovednosti,
                               kasneje iz resnega interesa, danes pa je razvoj programske opreme nekaj,
                               kar me iskreno veseli in motivira. Skozi leta to ni postala le tehnična
                               veščina, temveč način razmišljanja in pristop k reševanju problemov.
@@ -2096,8 +2096,8 @@ export default function Home() {
                             }
                           }}
                           className={`flex h-9 w-9 cursor-pointer items-center justify-center rounded-full transition-colors duration-200 ${isEndingDictation || isRequestingDictatePermission
-                              ? "text-white"
-                              : "text-white hover:bg-white/10"
+                            ? "text-white"
+                            : "text-white hover:bg-white/10"
                             }`}
                         >
                           {isEndingDictation || isRequestingDictatePermission ? (
@@ -2169,8 +2169,8 @@ export default function Home() {
                           void startDictation();
                         }}
                         className={`absolute bottom-[9px] flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-white transition-colors duration-200 hover:bg-white/10 min-[751px]:top-1/2 min-[751px]:bottom-auto min-[751px]:-translate-y-1/2 ${isListening || isRequestingMicPermission || isEndingTranscription
-                            ? "right-[116px]"
-                            : "right-[56px]"
+                          ? "right-[116px]"
+                          : "right-[56px]"
                           }`}
                       >
                         {isEndingDictation || isRequestingDictatePermission ? (
@@ -2185,16 +2185,16 @@ export default function Home() {
                       <div
                         ref={instantMenuRef}
                         className={`absolute bottom-[13px] left-[52px] min-[751px]:left-auto min-[751px]:top-1/2 min-[751px]:bottom-auto min-[751px]:-translate-y-1/2 ${isListening || isRequestingMicPermission || isEndingTranscription
-                            ? "min-[751px]:right-[156px]"
-                            : "min-[751px]:right-[96px]"
+                          ? "min-[751px]:right-[156px]"
+                          : "min-[751px]:right-[96px]"
                           }`}
                       >
                         <button
                           type="button"
                           onClick={() => setIsInstantMenuOpen((previous) => !previous)}
                           className={`flex cursor-pointer items-center gap-1 rounded-md px-2 py-1 text-sm transition-colors duration-200 hover:bg-[#afafaf]/15 ${responseMode === "Thinking"
-                              ? "text-[#98cdfe] hover:text-[#98cdfe]"
-                              : "text-[#afafaf] hover:text-white"
+                            ? "text-[#98cdfe] hover:text-[#98cdfe]"
+                            : "text-[#afafaf] hover:text-white"
                             }`}
                         >
                           {responseMode === "Thinking" && (
@@ -2298,8 +2298,8 @@ export default function Home() {
                           void startTranscription();
                         }}
                         className={`group absolute bottom-[9px] right-[9px] flex h-10 cursor-pointer items-center justify-center rounded-full transition-[background-color,filter] duration-200 hover:brightness-95 min-[751px]:top-1/2 min-[751px]:bottom-auto min-[751px]:-translate-y-1/2 ${isListening || isRequestingMicPermission || isEndingTranscription
-                            ? "px-4"
-                            : "w-10"
+                          ? "px-4"
+                          : "w-10"
                           } ${isEndingTranscription
                             ? "bg-white"
                             : isListening
