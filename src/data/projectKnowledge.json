@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "profile": {
+    "name": "Lucian Horvat",
+    "age": 18,
+    "location": "Rogaška Slatina",
+    "relocationIntent": "Ljubljana",
+    "remotePreference": "Open to remote and international work",
+    "experienceYears": 6,
+    "focusAreas": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "React Native",
+      "Frontend architecture",
+      "AI-enabled product thinking"
+    ]
+  },
+  "projects": [
+    {
+      "id": "portfolio-chat-platform",
+      "name": "Interactive Portfolio Chat Platform",
+      "type": "full-stack web",
+      "period": "2025-2026",
+      "status": "active",
+      "role": "Lead developer and product owner",
+      "summary": "Built a conversational portfolio website that demonstrates technical depth through interactive recruiter-focused dialogue.",
+      "problem": "Static portfolios fail to communicate decision-making quality, architecture maturity, and business-aware engineering thinking.",
+      "solution": "Implemented a Next.js and TypeScript application with AI-assisted responses, structured UX flows, and responsive interaction patterns.",
+      "impact": {
+        "qualitative": [
+          "Improved ability to communicate technical reasoning in recruiter conversations.",
+          "Created a reusable foundation for demonstrating architecture and product decisions."
+        ],
+        "measurable": []
+      },
+      "techStack": {
+        "frontend": [
+          "Next.js App Router",
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "backend": [
+          "Next.js API Routes",
+          "OpenAI API"
+        ],
+        "db": [],
+        "infra": []
+      },
+      "architecture": {
+        "pattern": "Client-driven UI with server API orchestration",
+        "keyDecisions": [
+          "Separated prompt/persona control in API route from UI behavior.",
+          "Used deterministic UI state control for chat, transcription, and dictation modes.",
+          "Added context-oriented prompt layers for recruiter-facing positioning."
+        ]
+      },
+      "responsibilities": [
+        "Product direction and UX strategy.",
+        "Frontend architecture and implementation.",
+        "AI integration and response quality tuning.",
+        "Interaction design across desktop and mobile."
+      ],
+      "tradeoffs": [
+        "Prioritized maintainability and deterministic behavior over quick one-off UI shortcuts.",
+        "Balanced rich interaction features with stable state transitions."
+      ],
+      "challenges": [
+        "Synchronizing speech, typewriter output, and interruption handling.",
+        "Keeping prompt strategy consistent while preventing fabricated claims.",
+        "Managing complex UI states without regressions."
+      ],
+      "whatYouLearned": [
+        "How to combine product storytelling with technical architecture in one interface.",
+        "How to structure AI context layers for consistency and recruiter relevance.",
+        "How to harden real-time interaction flows with predictable state models."
+      ],
+      "links": {
+        "repo": "",
+        "demo": "",
+        "caseStudy": ""
+      }
+    }
+  ],
+  "capabilities": [
+    "Designing scalable frontend architecture in Next.js and React.",
+    "Type-safe implementation with pragmatic TypeScript patterns.",
+    "Performance-aware UI decisions and responsive UX execution.",
+    "Translating product requirements into maintainable technical structures.",
+    "Owning full feature lifecycle from concept to production-ready behavior."
+  ],
+  "qaGuidelines": {
+    "unknownDetailPolicy": "Generalize quietly from known patterns without inventing concrete facts.",
+    "fabricationPolicy": "Never invent companies, numbers, shipped features, or credentials not present in project knowledge."
+  }
+}
