@@ -136,7 +136,7 @@ export default function Home() {
   const audioChunksRef = useRef<Blob[]>([]);
   const audioContextRef = useRef<AudioContext | null>(null);
   const analyserRef = useRef<AnalyserNode | null>(null);
-  const audioDataRef = useRef<Uint8Array | null>(null);
+  const audioDataRef = useRef<Uint8Array<ArrayBuffer> | null>(null);
   const micRafRef = useRef<number | null>(null);
   const shouldPlayStopPopRef = useRef(false);
   const transcriptionSessionIdRef = useRef(0);
